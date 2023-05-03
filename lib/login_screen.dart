@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:untitled/register_screen.dart';
 
 import 'components/components.dart';
 
@@ -90,7 +91,10 @@ class _LoginScreenState extends State<LoginScreen> {
                         borderRadius: BorderRadius.circular(25),
                       ),
                       child: MaterialButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          navigateAndFinish(context, const RegisterScreen());
+
+                        },
                         child: const Text(
                           'LOGIN',
                           style: TextStyle(
